@@ -1,0 +1,22 @@
+using System;
+
+namespace Exercise111
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string stringToRemove = Console.ReadLine();
+
+            string fullString = Console.ReadLine();
+            
+            while (fullString.Contains(stringToRemove))
+            {
+                int startINdex = fullString.IndexOf(stringToRemove);
+                
+                fullString=fullString.Remove(startINdex,stringToRemove.Length);
+            }
+            Console.WriteLine(fullString);
+        }
+    }
+}
