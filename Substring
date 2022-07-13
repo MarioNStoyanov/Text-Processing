@@ -12,9 +12,10 @@ namespace Exercise111
             
             while (fullString.Contains(stringToRemove))
             {
-                int startINdex = fullString.IndexOf(stringToRemove);
+                fullString = fullString.Replace(stringToRemove,string.Empty);
+                //int startINdex = fullString.IndexOf(stringToRemove);
                 
-                fullString=fullString.Remove(startINdex,stringToRemove.Length);
+                //fullString=fullString.Remove(startINdex,stringToRemove.Length);
             }
             Console.WriteLine(fullString);
         }
